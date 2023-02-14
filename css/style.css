@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(226, 240, 240);
+}
+
+#section-container {
+    display: flex;
+
+}
+
+/*section-info*/
+#section-info {
+    display: inline-block;
+    width: 54.3%;
+    padding: 1.5em 1.1em;
+    text-align: left;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: .8em;
+
+}
+
+.brand img {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.brand h1 {
+    margin: 3px 4px;
+    display: inline-block;
+    font-size: 25px;
+
+}
+
+#section-container #exclusive {
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 12px;
+}
+
+#section-info h2 {
+    font-size: 3em;
+}
+
+#section-info #date {
+    color: #696969;
+}
+
+#section-info p,
+h2,
+h3 {
+    margin: 5px;
+    padding: 5px;
+}
+
+#section-info p {
+    font-size: 15px;
+}
+
+/*seção de usuarios*/
+.users-container {
+
+    display: inline-block;
+    padding: 15px;
+}
+
+.user-card {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 3px;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+}
+
+.user-card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+
+/*Seção de Inscrição*/
+
+#form-container {
+    background-image: url('../img/pattern.png');
+    width: 45%;
+    background-size: cover;
+}
+
+.form-inner {
+    border: 2px solid white;
+    margin: 40px;
+    padding: 30px;
+    color: white;
+}
+
+.form-inner h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.form-inner p {
+    text-align: center;
+    font-size: 1em;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.register-form {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 8px;
+}
+
+.register-form input {
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    margin: 6px 4px;
+    width: 98%;
+
+}
+
+.register-form input[type=email],
+input[type=button] {
+    width: 98%;
+}
+
+.register-form input[type=button] {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: .5s;
+}
+
+.register-form input[type=button]:hover {
+    background-color: white;
+    color: blue;
+    font-weight: bolder;
+}
+
+.benefits h4 {
+    font-size: 20px;
+}
+
+.benefits h4,
+ul li {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:768px) {
+
+    #section-container {
+        display: block;
+    }
+
+    .brand {
+        align-items: center;
+        margin-bottom: .8em;
+
+    }
+
+    .brand h1 {
+        font-size: 2em;
+
+    }
+
+    #section-info {
+        width: 100%;
+    }
+
+    #section-container #exclusive {
+        font-size: 1.2em;
+    }
+
+    #section-info h2 {
+        font-size: 2em;
+    }
+
+    #section-info #date {
+        font-size: 1.2em;
+    }
+
+    #section-info p {
+        font-size: 1.5em;
+    }
+
+    /*seção de usuarios*/
+      .users-container h3 {
+        font-size: 2em;
+    }
+
+    .user-card {
+        margin: 1em 0;
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .user-card img {
+        margin-top: 2em;
+        height: 200px;
+        width: 200px;
+    }
+
+    .user-card h4 {
+        padding: 8px 0;
+        font-size: 2em;
+    }
+
+    /*Formulário*/
+    #form-container {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        padding-top: 1em;
+        
+    }
+    .form-inner h3 {
+        font-size: 2em;
+    }
+    .form-inner p {
+        font-size: 1em;
+        
+    }
+
+
+   
+}
