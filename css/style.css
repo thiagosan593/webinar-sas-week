@@ -2,14 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: roboto;
+    font-family: 'Roboto';
 
-}
-
-body {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(226, 240, 240);
 }
 
 #section-container {
@@ -21,7 +15,7 @@ body {
 #section-info {
     display: inline-block;
     width: 54.3%;
-    padding: 1.5em 1.1em;
+    padding: 1.5rem 3rem;
     text-align: left;
 }
 
@@ -35,61 +29,58 @@ body {
 .brand img {
     margin-top: 10px;
     margin-left: 20px;
-    width: 50px;
     height: 50px;
 }
 
 .brand h1 {
-    margin: 3px 4px;
-    display: inline-block;
-    font-size: 25px;
+    display: flex;
+    margin-left: 1rem;
+    font-size: 1.5rem;
 
 }
 
 #section-container #exclusive {
-    color: blue;
+    color: #0075ff;
     text-transform: uppercase;
     font-weight: bolder;
-    padding: 12px;
+    font-size: .9rem;
 }
 
 #section-info h2 {
-    font-size: 3em;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-#section-info #date {
-    color: #696969;
+#date {
+    color: #aaa;
+    margin-bottom: 1rem;
 }
 
 #section-info p,
 h2,
 h3 {
     margin: 5px;
-    padding: 5px;
+    margin-bottom: 1rem;
+
 }
 
 #section-info p {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 /*seção de usuarios*/
 .users-container {
-
-    display: inline-block;
-    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .user-card {
-    display: inline-block;
-    box-sizing: border-box;
-    border: 2px solid black;
-    padding: 2px;
-    margin: 3px;
-    width: 180px;
-    height: 200px;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    width: 162px;
+    margin: .2rem;
     text-align: center;
 }
-
 .user-card img {
     height: 100px;
     width: 100px;
@@ -103,13 +94,14 @@ h3 {
     background-image: url('../img/pattern.png');
     width: 45%;
     background-size: cover;
+    color: #fff;
 }
 
 .form-inner {
-    border: 2px solid white;
+    border: 2px solid #fff;
     margin: 40px;
     padding: 30px;
-    color: white;
+
 }
 
 .form-inner h3 {
@@ -136,25 +128,20 @@ h3 {
     border-radius: 3px;
     border: none;
     margin: 6px 4px;
-    width: 98%;
+    width: 100%;
 
-}
-
-.register-form input[type=email],
-input[type=button] {
-    width: 98%;
 }
 
 .register-form input[type=button] {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #fff;
+    color: #fff;
     transition: .5s;
 }
 
 .register-form input[type=button]:hover {
-    background-color: white;
-    color: blue;
+    background-color: #fff;
+    color: #0075ff;
     font-weight: bolder;
 }
 
@@ -165,6 +152,10 @@ input[type=button] {
 .benefits h4,
 ul li {
     padding-bottom: 10px;
+}
+
+.benefits ul {
+    list-style-position: inside;
 }
 
 @media screen and (max-width:768px) {
@@ -205,7 +196,7 @@ ul li {
     }
 
     /*seção de usuarios*/
-      .users-container h3 {
+    .users-container h3 {
         font-size: 2em;
     }
 
@@ -224,7 +215,7 @@ ul li {
 
     .user-card h4 {
         padding: 8px 0;
-        font-size: 2em;
+        font-size: 1.6rem;
     }
 
     /*Formulário*/
@@ -233,16 +224,21 @@ ul li {
         height: 100vh;
         background-size: cover;
         padding-top: 1em;
-        
+
     }
+    .form-inner{
+        padding: 2rem;
+        margin: 1rem;
+    }
+
     .form-inner h3 {
         font-size: 2em;
     }
+
     .form-inner p {
         font-size: 1em;
-        
+
     }
 
 
-   
 }
